@@ -4,7 +4,7 @@ const CONFIG = {
     yesButton: "YES",
     noButton: "NO",
     noEscapeTexts: ["Eits, ga bisa😝", "Hehe, coba lagi 😜", "Yaudah deh, aku anggap YES ya!"],
-    confirmTitle: "Yeyy! Kamu Beneran Mau 😋",
+    confirmTitle: "Yeyy! Kamu Beneran Mau :>",
     confirmText: "Mulai dari sekarang kamu resmi jadi…",
     badgeText: "My Valentine",
     nextButton: "Lanjut ",
