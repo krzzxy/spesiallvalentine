@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    <meta name="description" content="A sweet Valentine's Day message for someone special">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>z
+    <div class="bg-gradient"></div>
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <canvas id="heartCanvas"></canvas>
+
+    <div class="sparkle-container" id="sparkleContainer"></div>
+
+    <main id="app">
+
+        <section id="page1" class="page active">
+            <div class="page-content">
+                <div class="floating-hearts">
+                    <span class="float-heart">💕</span>
+                    <span class="float-heart">💗</span>
+                    <span class="float-heart">💖</span>
+                </div>
+                <div class="glass-card main-card">
+                    <div class="card-glow"></div>
+                    <h1 class="title-main" id="mainQuestion">Will you be my Valentine?</h1>
+                    <p class="subtitle" id="subQuestion">Please say yes </p>
+                    <div class="button-group">
+                        <button id="yesBtn" class="btn btn-yes">
+                            <span class="btn-text">YES</span>
+                            <span class="btn-shine"></span>
+                        </button>
+                        <button id="noBtn" class="btn btn-no">
+                            <span class="btn-text">NO</span>
+                        </button>
+                    </div>
+                    <p id="noEscapeText" class="escape-text hidden"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="page2" class="page">
+            <div class="page-content">
+                <div class="celebration-burst" id="celebrationBurst"></div>
+                <div class="glass-card">
+                    <div class="card-glow"></div>
+                    <div class="emoji-bounce">🎉</div>
+                    <h1 class="title-cursive" id="confirmTitle">YEYY! Kamu beneran mau 💗</h1>
+                    <div class="confirmation-box">
+                        <p id="confirmText">Mulai dari sekarang kamu resmi jadi…</p>
+                        <div class="badge-container">
+                            <div class="badge">
+                                <span class="badge-text">My Valentine</span>
+                                <div class="badge-sparkle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button id="nextToPage3" class="btn btn-primary">
+                            <span class="btn-text">Lanjut </span>
+                            <span class="btn-shine"></span>
+                        </button>
+                        <button id="backToPage1" class="btn btn-ghost btn-small">Ulangi pertanyaan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page3" class="page">
+            <div class="page-content flower-page">
+                <div class="falling-petals" id="petalsContainer"></div>
+                <div class="glass-card">
+                    <div class="card-glow"></div>
+                    <h1 class="title-cursive" id="flowerTitle">Ini kado spesial buat kamu </h1>
+                    <div class="bouquet-wrapper">
+                        <div class="bouquet-glow"></div>
+                        <div class="bouquet" id="bouquet">
+                            <img src="assets/flower.png" alt="Buket Bunga" class="bouquet-img">
+                        </div>
+                    </div>
+                    <p id="bouquetMessage" class="bouquet-message hidden">YeYy! Udah jadi milik kamu :3 </p>
+                    <div class="button-group">
+                        <button id="takeBouquet" class="btn btn-primary">
+                            <span class="btn-text">Terima hadiahnya </span>
+                            <span class="btn-shine"></span>
+                        </button>
+                        <button id="nextToPage4" class="btn btn-primary hidden">
+                            <span class="btn-text">Next </span>
+                            <span class="btn-shine"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page4" class="page">
+            <div class="page-content">
+                <div class="glass-card collage-card">
+                    <div class="card-glow"></div>
+                    <h1 class="title-cursive" id="collageTitle">Our First Chat:3</h1>
+                    <div class="photo-single">
+                        <div class="photo-item">
+                            <img src="assets/pictt.jpeg" class="photo-preview" alt="Foto 1">
+                        </div>
+                    </div>
+                    <button id="nextToPage5" class="btn btn-primary">
+                        <span class="btn-text">Satu halaman lagi… </span>
+                        <span class="btn-shine"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="page5" class="page">
+            <div class="page-content">
+                <div id="confettiContainer" class="confetti-container"></div>
+
+                <div class="envelope-wrapper" id="envelopeWrapper">
+                    <div class="envelope-container">
+                        <div class="envelope" id="envelope">
+                            <div class="envelope-back"></div>
+                            <div class="letter" id="letter">
+                                <div class="letter-content">
+                                    <span class="letter-heart">💕</span>
+                                    <span class="letter-text">For You</span>
+                                </div>
+                            </div>
+                            <div class="envelope-front"></div>
+                            <div class="envelope-flap"></div>
+                        </div>
+                    </div>
+                    <p class="envelope-hint" id="envelopeHint">Tap untuk membuka</p>
+                </div>
+
+                <div class="glass-card final-card hidden" id="finalContent">
+                    <div class="card-glow"></div>
+                    <div class="final-emoji">💞</div>
+                    <h1 class="title-cursive title-final" id="finalTitle">Happy Valentine, SAYANGKUUU</h1>
+                    <div class="message-box">
+                        <div class="message-decoration">✨</div>
+                        <p id="finalMessage">
+                            Sebenernya aku setiap hari juga sayang kamu tanpa adanya hari valentine ko mwehehe:3 
+                            terimakasi yaa suda dateng di kehidupanku, terimakasi untuk hal hal baik yg suda kamu usahakan, pokonyaa terimakasi for everything yaa sayanggkuu
+                            LOVEE U MOREE
+                        </p>
+        
+                        <div class="message-decoration right">✨</div>
+                    </div>
+                    <div class="button-group final-buttons">
+                        <button id="restartBtn" class="btn btn-ghost">
+                            <span class="btn-text">Restart </span>
+                        </button>
+                        <button id="copyBtn" class="btn btn-primary">
+                            <span class="btn-text">Copy Message </span>
+                            <span class="btn-shine"></span>
+                        </button>
+                    </div>
+                    <p id="copyNotif" class="copy-notif hidden">Pesan berhasil dicopy! </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+<script>
+    function setupMusic() {
+        const music = document.getElementById('backgroundMusic');
+        
+        const isMusicPlaying = localStorage.getItem('musicPlaying') === 'true';
+        const musicCurrentTime = localStorage.getItem('musicCurrentTime') || 0;
+
+        if (isMusicPlaying) {
+            music.currentTime = parseFloat(musicCurrentTime);
+        }
+
+        music.addEventListener('play', () => {
+            localStorage.setItem('musicPlaying', 'true');
+        });
+
+        music.addEventListener('pause', () => {
+            localStorage.setItem('musicPlaying', 'false');
+        });
+
+        setInterval(() => {
+            localStorage.setItem('musicCurrentTime', music.currentTime);
+        }, 1000);
+
+        document.addEventListener('click', function startMusic() {
+            music.play().catch(error => {
+                console.log('Autoplay prevented', error);
+            });
+            document.removeEventListener('click', startMusic);
+        });
+    }
+
+        document.addEventListener('DOMContentLoaded', setupMusic);
+</script>
+
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="assets/blue.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+</body>
+
+</html>
