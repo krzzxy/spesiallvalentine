@@ -51,6 +51,11 @@ const elements = {
     sparkleContainer: document.getElementById('sparkleContainer'),
     envelopeWrapper: document.getElementById('envelopeWrapper'),
     envelope: document.getElementById('envelope'),
+    finalMessage.textContent = 
+`Sebenernya aku setiap hari juga sayang kamu tanpa adanya hari valentine ko mwehehe:3
+terimakasi yaa suda dateng di kehidupanku, terimakasi untuk hal hal baik yg suda kamu usahakan,
+pokoknya terimakasi for everything yaa sayangku
+LOVEE U MOREE`;
     finalContent: document.getElementById('finalContent')
 };
 
