@@ -16,7 +16,8 @@ const CONFIG = {
     collageTitle: "Our First Chat:3",
     nextCollageButton: "Satu halaman lagi… ",
     finalTitle: "Happy Valentine, SAYANGKUUU",
-    finalMessage: ` Sebenernya aku setiap hari juga sayang kamu tanpa adanya hari valentine ko mwehehe:3 terimakasi yaa suda dateng di kehidupanku, terimakasi untuk hal hal baik yg suda kamu usahakan, pokonyaa terimakasi for everything yaa sayanggkuu 
+    finalMessage: ` Sebenernya aku setiap hari juga sayang kamu tanpa adanya hari valentine ko mwehehe:3 <br>
+    terimakasi yaa suda dateng di kehidupanku, terimakasi untuk hal hal baik yg suda kamu usahakan, pokonyaa terimakasi for everything yaa sayanggkuu <br> 
     LOVEE U MOREE`,
     restartButton: "Restart ",
     copyButton: "Copy Message ",
