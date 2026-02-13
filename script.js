@@ -51,7 +51,6 @@ const elements = {
     sparkleContainer: document.getElementById('sparkleContainer'),
     envelopeWrapper: document.getElementById('envelopeWrapper'),
     envelope: document.getElementById('envelope'),
-    finalMessage: document.getElementById('finalMessage')
     finalContent: document.getElementById('finalContent')
 };
 
