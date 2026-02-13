@@ -3,7 +3,7 @@ const CONFIG = {
     subQuestion: "Please say yes ",
     yesButton: "YES",
     noButton: "NO",
-    noEscapeTexts: ["Eits, ga bisa😝", "Hehe, coba lagi 😜", "Yaudah deh, aku anggap YES ya! 💕"],
+    noEscapeTexts: ["Eits, ga bisa😝", "Hehe, coba lagi 😜", "Yaudah deh, aku anggap YES ya!"],
     confirmTitle: "YEYY! Kamu Beneran Mau 💗",
     confirmText: "Mulai dari sekarang kamu resmi jadi…",
     badgeText: "My Valentine",
@@ -148,23 +148,6 @@ function handlePhotoUpload(index, event) {
         elements.photoLabels[index].style.opacity = '0';
     };
     reader.readAsDataURL(file);
-}
-
-function triggerConfetti() {
-    elements.confettiContainer.innerHTML = '';
-    const hearts = ['💖', '💕', '💗', '💓', '💞', '💝', '❤️', '🩷', '✨', '🌸'];
-    for (let i = 0; i < 60; i++) {
-        setTimeout(() => {
-            const confetti = document.createElement('span');
-            confetti.className = 'confetti-heart';
-            confetti.textContent = hearts[Math.floor(Math.random() * hearts.length)];
-            confetti.style.left = Math.random() * 100 + '%';
-            confetti.style.fontSize = (Math.random() * 1.8 + 1) + 'rem';
-            confetti.style.animationDelay = Math.random() * 0.3 + 's';
-            elements.confettiContainer.appendChild(confetti);
-            setTimeout(() => confetti.remove(), 4500);
-        }, i * 50);
-    }
 }
 
 function resetEnvelope() {
