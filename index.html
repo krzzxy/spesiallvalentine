@@ -191,7 +191,7 @@
         }
 
         music.addEventListener('play', () => {
-            localStorage.setItem('musicPlaying', 'true');
+            localStorage.removeItem('musicPlaying', 'true');
         });
 
         music.addEventListener('pause', () => {
