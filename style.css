@@ -1563,3 +1563,6 @@ body {
         transform: translateY(-160px) scale(1.15);
     }
 }
+#finalMessage {
+  white-space: pre-line;
+}
