@@ -17,8 +17,7 @@ const CONFIG = {
     nextCollageButton: "Satu halaman lagi… ",
     finalTitle: "Happy Valentine, SAYANGKUUU",
     finalMessage: ` Sebenernya aku setiap hari juga sayang kamu tanpa adanya hari valentine ko mwehehe:3
-    terimakasi yaa suda dateng di kehidupanku, terimakasi untuk hal hal baik yg suda kamu usahakan,
-    pokonyaa terimakasi for everything yaa sayanggkuu 
+    terimakasi yaa suda dateng di kehidupanku, terimakasi untuk hal hal baik yg suda kamu usahakan, pokonyaa terimakasi for everything yaa sayanggkuu 
     LOVEE U MOREE🤍🤍🤍`,
     restartButton: "Restart ",
     copyButton: "Copy Message ",
